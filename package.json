@@ -1,0 +1,20 @@
+{
+  "name": "mercado",
+  "version": "1.0.0",
+  "description": "Uma pratica pré-treino, para preparo de um futuro teste",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Ana Lara",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mysql2": "^3.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
