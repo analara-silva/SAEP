@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    Bem vindo
+    <header></header>
+    <main>
+        <table class="blueTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Composição Química</th>
+                    <th>Fragrância</th>
+                    <th>Volume</th>
+                    <th>Embalagem</th>
+                    <th>Aplicação</th>
+                    <th>Data de Validade</th>
+                    <th>Lote de Fabricação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (produtos.length > 0) { %>
+                <% produtos.forEach(produto => { %>
+                <tr>
+                    <td><%= produto.nome %></td>
+                    <td><%= produto.composicao_quimica%></td>
+                    <td><%= produto.fragrancia %></td>
+                    <td><%= produto.volume_valor + produto.volume_unidade %></td>
+                    <td><%= produto.data_validade %></td>
+                    <td><%= produto.lote_fabricacao %></td>
+                </tr>
+                <% }) %>
+                <% } else { %>
+                    <tr>
+                      <td colspan="8" style="text-align:center;">Nenhuma pessoa encontrada.</td>
+                    </tr>
+                  <% } %>
+            </tbody>
+        </table>
+    </main>
+    <footer></footer>
 </body>
 </html>

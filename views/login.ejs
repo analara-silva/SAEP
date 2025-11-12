@@ -13,20 +13,24 @@
     <main>
         <form action="/login" method="post">
             <div class="inputs">
-                <label for="l-username">Usuário</label>
-                <input type="text" name="username" id="input-login" required>
-
-                <label for="l-password">Senha</label>
-                <input type="password" name="password" id="input-login">
+                <div class="username">
+                    <label for="l-username">Usuário &nbsp;</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="password">
+                    <label for="l-password">Senha &nbsp;</label>
+                    <input type="password" name="password" id="password">
+                </div>
             </div>
             <div class="form-button">
-                <button class="button-input">Enviar</button>
+                <button class="button-input" type="submit" >Enviar</button>
+                <p>Não tem login? <a href="/cadastro">Cadastre-se</a></p>
             </div>
         </form>
     </main>
     <footer>
         <ul>
-            <li><a href="#">Contanto do Suporte</a></li>
+            <li><a href="#">Contato do Suporte</a></li>
         </ul>
     </footer>
     <script src="./js/login.js"></script>
